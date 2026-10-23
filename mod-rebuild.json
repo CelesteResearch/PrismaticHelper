@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "PrismaticHelper",
+  "version": "1.12.0",
+  "mode": "local-rebuild",
+  "archive": {
+    "path": "PrismaticHelper.zip",
+    "sha256": "bb9f44d72774a8089d3ce8b20ecef06b04345da9fea2ca7ebb81564047058f5c",
+    "downloadUrl": "https://gamebanana.com/mmdl/1207039",
+    "fileId": 1207039
+  },
+  "originalAssembly": {
+    "entry": "PrismaticHelper/bin/Debug/.net7.0/PrismaticHelper.dll",
+    "sha256": "cdaf71bb68944f9c595830906cb5ddea87aad410d16a4b44167109d5650b17db"
+  },
+  "license": "CC-BY-NC-ND-4.0",
+  "upstream": "https://gamebanana.com/mods/360435",
+  "recipe": "Recipe/recipe.json",
+  "assemblyName": "Celeste.Mods.PrismaticHelper",
+  "dependencies": [],
+  "decompileTypes": [
+    {
+      "name": "PrismaticHelper.Entities.Stencils",
+      "path": "PrismaticHelper/PrismaticHelper/Entities/Stencils.cs",
+      "sha256": "ce348dd784db328822e610041469f4796421dcad9a06076ad133b1577e7ed39d"
+    },
+    {
+      "name": "PrismaticHelper.Entities.Panels.AbstractPanel",
+      "path": "PrismaticHelper/PrismaticHelper/Entities/Panels/AbstractPanel.cs",
+      "sha256": "9f20f1c5fc1debe24c181b519dfb292ed5226abc9fab59a1956e78db45db8da2"
+    },
+    {
+      "name": "PrismaticHelper.Entities.Panels.StylegroundsPanel",
+      "path": "PrismaticHelper/PrismaticHelper/Entities/Panels/StylegroundsPanel.cs",
+      "sha256": "4ad06c995cbb87ba070e35525984e6d8ca98da7c61b038deabfab249e8b0e26b"
+    },
+    {
+      "name": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+      "path": "PrismaticHelper/PrismaticHelper/Entities/Panels/StylegroundsPanelRenderer.cs",
+      "sha256": "8497f9a5c9e960c2ebdd8d9fa65122a99d2b3354826d1df11cb3727f36f4c5f7"
+    }
+  ]
+}
