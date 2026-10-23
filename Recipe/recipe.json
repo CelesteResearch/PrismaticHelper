@@ -1,0 +1,2818 @@
+{
+  "schemaVersion": 1,
+  "newline": "lf",
+  "inputs": [
+    {
+      "id": "PrismaticHelper.Entities.Stencils",
+      "path": "PrismaticHelper/PrismaticHelper/Entities/Stencils.cs",
+      "sha256": "ce348dd784db328822e610041469f4796421dcad9a06076ad133b1577e7ed39d"
+    },
+    {
+      "id": "PrismaticHelper.Entities.Panels.AbstractPanel",
+      "path": "PrismaticHelper/PrismaticHelper/Entities/Panels/AbstractPanel.cs",
+      "sha256": "9f20f1c5fc1debe24c181b519dfb292ed5226abc9fab59a1956e78db45db8da2"
+    },
+    {
+      "id": "PrismaticHelper.Entities.Panels.StylegroundsPanel",
+      "path": "PrismaticHelper/PrismaticHelper/Entities/Panels/StylegroundsPanel.cs",
+      "sha256": "4ad06c995cbb87ba070e35525984e6d8ca98da7c61b038deabfab249e8b0e26b"
+    },
+    {
+      "id": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+      "path": "PrismaticHelper/PrismaticHelper/Entities/Panels/StylegroundsPanelRenderer.cs",
+      "sha256": "8497f9a5c9e960c2ebdd8d9fa65122a99d2b3354826d1df11cb3727f36f4c5f7"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "Entities/Panels/AbstractPanel.cs",
+      "sha256": "a177ea2904424bf2172a67cd2e0ec5c05615c6b46c6703b4b79bbf2e69201868",
+      "segments": [
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 0,
+            "length": 19
+          }
+        },
+        {
+          "literal": " System.Numerics;\nusing Celeste.Core.Components;\nusing Celeste.Core.Reflection.Runtime;\nusing Celeste.Core.Display;\nusing Celeste.Core.Geometry;\nusing Celeste.Core.Rendering;\nusing Celeste.Core.Scheduling;\nusing Celeste.Formats.Map.Entities.Structure;\nusing Celeste.Graphics.Animation;\nusing Celeste.Graphics.Content;\nusing Celeste.Graphics.Display.Colors;\nusing Celeste.Graphics.Geometry.TwoD.Camera;\nusing Celeste.Graphics.Rendering;\nusing Celeste.Physics.Collision.Shapes;\nusing Celeste.Scene.Entities;\nusing Celeste.Simulation.Gameplay.Platforms.StaticMovers;\nusing Celeste.Mods.PrismaticHelper.Rendering.Panels;\n\nnamespace Celeste.Mods."
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 128,
+            "length": 31
+          }
+        },
+        {
+          "literal": "\n{\n    [RuntimeTypeAlias(\"PrismaticHelper.Entities.Panels.AbstractPanel\")]\n    "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 161,
+            "length": 37
+          }
+        },
+        {
+          "literal": " SceneEntityState, IRoomBackdropPanel\n    "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 218,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 224,
+            "length": 20
+          }
+        },
+        {
+          "literal": ", "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 265,
+            "length": 7
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 277,
+            "length": 22
+          }
+        },
+        {
+          "literal": ", "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 319,
+            "length": 5
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 329,
+            "length": 23
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 357,
+            "length": 20
+          }
+        },
+        {
+          "literal": ", ScrollY, "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 422,
+            "length": 8
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 435,
+            "length": 24
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 464,
+            "length": 6
+          }
+        },
+        {
+          "literal": " PackedColor Tint;\n        public SpriteImage Image, "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 524,
+            "length": 5
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 534,
+            "length": 21
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 560,
+            "length": 22
+          }
+        },
+        {
+          "literal": ";\n        string IRoomBackdropPanel.RoomName => RoomName"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 589,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 595,
+            "length": 20
+          }
+        },
+        {
+          "literal": " => Mask == null ? Width : "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 752,
+            "length": 33
+          }
+        },
+        {
+          "literal": "\n        public int RealHeight => Mask == null ? Height : "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 966,
+            "length": 35
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1023,
+            "length": 25
+          }
+        },
+        {
+          "literal": " "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1053,
+            "length": 1
+          }
+        },
+        {
+          "literal": " "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1063,
+            "length": 3
+          }
+        },
+        {
+          "literal": " => Position; set => "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1151,
+            "length": 17
+          }
+        },
+        {
+          "literal": " "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1183,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1190,
+            "length": 20
+          }
+        },
+        {
+          "literal": " "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1215,
+            "length": 1
+          }
+        },
+        {
+          "literal": " "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1225,
+            "length": 3
+          }
+        },
+        {
+          "literal": " => Scale; set => "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1310,
+            "length": 14
+          }
+        },
+        {
+          "literal": " "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1333,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n\n        protected AbstractPanel(ISourceEngineContext engine, "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1370,
+            "length": 24
+          }
+        },
+        {
+          "literal": " offset"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1398,
+            "length": 9
+          }
+        },
+        {
+          "literal": "((ISourceEntitySourceDataEnvironment)engine).EntitySourceDataRegistration, "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1407,
+            "length": 15
+          }
+        },
+        {
+          "literal": " offset"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1426,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1432,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1442,
+            "length": 19
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1470,
+            "length": 21
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1500,
+            "length": 35
+          }
+        },
+        {
+          "literal": ", false"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1535,
+            "length": 2
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1546,
+            "length": 36
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1591,
+            "length": 36
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1636,
+            "length": 36
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1681,
+            "length": 27
+          }
+        },
+        {
+          "literal": ", \"\""
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1708,
+            "length": 2
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1719,
+            "length": 23
+          }
+        },
+        {
+          "literal": ", \"\""
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1742,
+            "length": 2
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1753,
+            "length": 6
+          }
+        },
+        {
+          "literal": " SourceHexColor"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1764,
+            "length": 42
+          }
+        },
+        {
+          "literal": "\n            Depth = Foreground ? -"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1844,
+            "length": 5
+          }
+        },
+        {
+          "literal": " : "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1853,
+            "length": 5
+          }
+        },
+        {
+          "literal": ";\n            string image "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1881,
+            "length": 19
+          }
+        },
+        {
+          "literal": ", \"\");\n            string mask "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1924,
+            "length": 18
+          }
+        },
+        {
+          "literal": ", \"\""
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1942,
+            "length": 2
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1953,
+            "length": 26
+          }
+        },
+        {
+          "literal": "mask"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1984,
+            "length": 2
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 1995,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2009,
+            "length": 14
+          }
+        },
+        {
+          "literal": " SpriteImage(((ISourceGameGraphicsEnvironment)engine).GameGraphics.GameAtlas[mask"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2044,
+            "length": 4
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2061,
+            "length": 21
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2091,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2102,
+            "length": 26
+          }
+        },
+        {
+          "literal": "image))\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2157,
+            "length": 15
+          }
+        },
+        {
+          "literal": " SpriteImage(((ISourceGameGraphicsEnvironment)engine).GameGraphics.GameAtlas[image"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2192,
+            "length": 4
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2216,
+            "length": 31
+          }
+        },
+        {
+          "literal": ", false"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2247,
+            "length": 2
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2258,
+            "length": 13
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2280,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n                Collider = new HitboxColliderGeometry"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2320,
+            "length": 16
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2349,
+            "length": 7
+          }
+        },
+        {
+          "literal": " SourceStaticMoverState { SolidChecker = solid => Celeste.Physics.Collision.SourceEntityCollision.Check(this, solid) "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2404,
+            "length": 3
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2416,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2422,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2429,
+            "length": 21
+          }
+        },
+        {
+          "literal": "ISourceRenderContext context, CameraState "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2457,
+            "length": 7
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2469,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2479,
+            "length": 33
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2521,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2535,
+            "length": 11
+          }
+        },
+        {
+          "literal": "Position"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2550,
+            "length": 42
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2605,
+            "length": 11
+          }
+        },
+        {
+          "literal": "Position"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2620,
+            "length": 39
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2672,
+            "length": 17
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2702,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n                    SourcePrimitiveDrawing.Rect(context, this, "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2730,
+            "length": 37
+          }
+        },
+        {
+          "literal": "\n                    "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2784,
+            "length": 7
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2804,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n\n                var "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2828,
+            "length": 23
+          }
+        },
+        {
+          "literal": "\n                SourceAtlasDrawing.Draw(context, this, texture, "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2877,
+            "length": 97
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2983,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2989,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 2996,
+            "length": 7
+          }
+        },
+        {
+          "literal": " IntRect Area(CameraState camera) => new"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3063,
+            "length": 8
+          }
+        },
+        {
+          "literal": "Position.X - camera"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3081,
+            "length": 40
+          }
+        },
+        {
+          "literal": "Position.Y - camera"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3131,
+            "length": 53
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3196,
+            "length": 28
+          }
+        },
+        {
+          "literal": "CameraState camera"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3232,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3238,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3248,
+            "length": 2
+          }
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3250,
+            "length": 31
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3304,
+            "length": 13
+          }
+        },
+        {
+          "literal": "\n            var area = Area(camera"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3365,
+            "length": 2
+          }
+        },
+        {
+          "literal": "\n            // Keep the published OR expressions, including their broad culling behavior.\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3376,
+            "length": 8
+          }
+        },
+        {
+          "literal": "area.Left < camera.Right || area.Right > camera"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3445,
+            "length": 11
+          }
+        },
+        {
+          "literal": "area.Top < camera.Bottom || area.Bottom > camera"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3518,
+            "length": 6
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3529,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3536,
+            "length": 22
+          }
+        },
+        {
+          "literal": " => Name;\n        public Sprite ScSprite() => null;\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3661,
+            "length": 31
+          }
+        },
+        {
+          "literal": " => "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3714,
+            "length": 13
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3739,
+            "length": 30
+          }
+        },
+        {
+          "literal": " => "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.AbstractPanel",
+            "normalizedSha256": "fb565db7cf52ab41c797293b4bfe76c58abb5891b9a35284f9f49b54353a46b9",
+            "offset": 3791,
+            "length": 21
+          }
+        }
+      ]
+    },
+    {
+      "path": "Entities/Panels/StylegroundsPanel.cs",
+      "sha256": "20bbb8f7d0d9e4249656b9449ce0eeab76591faeb6863c45988dece1ca7027e8",
+      "segments": [
+        {
+          "literal": "using System.Numerics"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanel",
+            "normalizedSha256": "1e972784acd19212020536c8ffed8f2b8d97546238477b877c63375754198132",
+            "offset": 13,
+            "length": 16
+          }
+        },
+        {
+          "literal": "Core.Reflection.Runtime;\nusing Celeste.Core.Scheduling;\nusing Celeste.Everest.Modules.Entities.Metadata;\nusing Celeste.Scene.Tracking.Attributes;\nusing Celeste.Formats.Map.Entities.Structure;\n\nnamespace Celeste.Mods."
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanel",
+            "normalizedSha256": "1e972784acd19212020536c8ffed8f2b8d97546238477b877c63375754198132",
+            "offset": 100,
+            "length": 31
+          }
+        },
+        {
+          "literal": "\n{\n    [CustomEntity("
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanel",
+            "normalizedSha256": "1e972784acd19212020536c8ffed8f2b8d97546238477b877c63375754198132",
+            "offset": 162,
+            "length": 35
+          }
+        },
+        {
+          "literal": ")]\n    [RuntimeTypeAlias(\"PrismaticHelper.Entities.Panels.StylegroundsPanel\")]\n    [SceneTracked"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanel",
+            "normalizedSha256": "1e972784acd19212020536c8ffed8f2b8d97546238477b877c63375754198132",
+            "offset": 217,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n    "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanel",
+            "normalizedSha256": "1e972784acd19212020536c8ffed8f2b8d97546238477b877c63375754198132",
+            "offset": 219,
+            "length": 46
+          }
+        },
+        {
+          "literal": "\n    "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanel",
+            "normalizedSha256": "1e972784acd19212020536c8ffed8f2b8d97546238477b877c63375754198132",
+            "offset": 266,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanel",
+            "normalizedSha256": "1e972784acd19212020536c8ffed8f2b8d97546238477b877c63375754198132",
+            "offset": 272,
+            "length": 25
+          }
+        },
+        {
+          "literal": "ISourceEngineContext engine, "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanel",
+            "normalizedSha256": "1e972784acd19212020536c8ffed8f2b8d97546238477b877c63375754198132",
+            "offset": 297,
+            "length": 24
+          }
+        },
+        {
+          "literal": " offset"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanel",
+            "normalizedSha256": "1e972784acd19212020536c8ffed8f2b8d97546238477b877c63375754198132",
+            "offset": 325,
+            "length": 9
+          }
+        },
+        {
+          "literal": "engine, data, offset"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanel",
+            "normalizedSha256": "1e972784acd19212020536c8ffed8f2b8d97546238477b877c63375754198132",
+            "offset": 343,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanel",
+            "normalizedSha256": "1e972784acd19212020536c8ffed8f2b8d97546238477b877c63375754198132",
+            "offset": 349,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanel",
+            "normalizedSha256": "1e972784acd19212020536c8ffed8f2b8d97546238477b877c63375754198132",
+            "offset": 355,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n    "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanel",
+            "normalizedSha256": "1e972784acd19212020536c8ffed8f2b8d97546238477b877c63375754198132",
+            "offset": 357,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n}"
+        }
+      ]
+    },
+    {
+      "path": "Modules/PrismaticHelperModule.cs",
+      "sha256": "69b173d0ff3603fbbed747c16f5bc4afcea03c5b701342fe3b0d723b8fc8d0d9",
+      "segments": [
+        {
+          "literal": "using Celeste.Core.Scheduling;\nusing Celeste.Everest.Modules.Runtime;\nusing Celeste.Mods.PrismaticHelper.Rendering.Panels;\n\nnamespace Celeste.Mods.PrismaticHelper.Modules\n{\n    public sealed class PrismaticHelperModule(ISourceEngineContext engine) : SourceEverestModule(engine)\n    {\n        private StylegroundsPanelRenderer panels;\n        public override void Load()\n        {\n            panels = new StylegroundsPanelRenderer(SourceEngine);\n        }\n\n        public override void Unload()\n        {\n            panels?.Dispose();\n            panels = null;\n        }\n    }\n}"
+        }
+      ]
+    },
+    {
+      "path": "Rendering/Panels/IRoomBackdropPanel.cs",
+      "sha256": "fe2dd867fee0c17badce7a3ffc1443bb97f263ddfba91772772386362ea908f2",
+      "segments": [
+        {
+          "literal": "namespace Celeste.Mods.PrismaticHelper.Rendering.Panels\n{\n    public interface IRoomBackdropPanel\n    {\n        string RoomName { get; }\n    }\n}"
+        }
+      ]
+    },
+    {
+      "path": "Rendering/Panels/PanelRoomGroups.cs",
+      "sha256": "52dccf91dfc585b6433697f0c3f654fcfdc2ba220d3b8369259dd93cec96de87",
+      "segments": [
+        {
+          "literal": "using System;\nusing System.Collections.Generic;\nusing Celeste.Mods.PrismaticHelper.Entities.Panels;\n\nnamespace Celeste.Mods.PrismaticHelper.Rendering.Panels\n{\n    internal sealed class PanelRoomGroups\n    {\n        internal sealed class Group\n        {\n            public string RoomName;\n            public readonly List<StylegroundsPanel> Panels = new();\n        }\n\n        private readonly Dictionary<RoomKey, int> indices = new();\n        private readonly List<Group> groups = new();\n        public int Count { get; private set; }\n\n        public Group this[int i] => groups[i];\n        public void Clear()\n        {\n            indices.Clear();\n            for (int i = 0; i < Count; i++)\n                groups[i].Panels.Clear();\n            Count = 0;\n        }\n\n        public void Add(string room, StylegroundsPanel panel)\n        {\n            var key = new RoomKey(room);\n            if (!indices.TryGetValue(key, out int index))\n            {\n                index = Count++;\n                if (index == groups.Count)\n                    groups.Add(new Group());\n                groups[index].RoomName = room;\n                indices.Add(key, index);\n            }\n\n            if (panel != null)\n                groups[index].Panels.Add(panel);\n        }\n\n        private readonly struct RoomKey : IEquatable<RoomKey>\n        {\n            private readonly string room;\n            public RoomKey(string room) => this.room = room;\n            public bool Equals(RoomKey other) => StringComparer.Ordinal.Equals(room, other.room);\n            public override bool Equals(object value) => value is RoomKey other && Equals(other);\n            public override int GetHashCode() => room == null ? 0 : StringComparer.Ordinal.GetHashCode(room);\n        }\n    }\n}"
+        }
+      ]
+    },
+    {
+      "path": "Rendering/Panels/PanelStencilTargets.cs",
+      "sha256": "27e17870167015a08a4baf4baff3a115f35fbb5247cd8ab166aa3b921132e7be",
+      "segments": [
+        {
+          "literal": "using System;\nusing Celeste.Core.Rendering.States;\nusing Celeste.Core.Rendering;\nusing Celeste.Core.Scheduling;\nusing Celeste.Graphics.Content.VirtualAssets;\n\nnamespace Celeste.Mods.PrismaticHelper.Rendering.Panels\n{\n    public sealed class PanelStencilTargets : IDisposable\n    {\n        public static readonly SourceBlendState AlphaMaskBlend = new()\n        {\n            ColorSourceBlend = SourceBlendFactor"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 347,
+            "length": 6
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 362,
+            "length": 20
+          }
+        },
+        {
+          "literal": " SourceBlendFunction"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 396,
+            "length": 5
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 410,
+            "length": 23
+          }
+        },
+        {
+          "literal": " SourceBlendFactor"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 439,
+            "length": 13
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 461,
+            "length": 18
+          }
+        },
+        {
+          "literal": " SourceBlendFactor"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 485,
+            "length": 6
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 500,
+            "length": 20
+          }
+        },
+        {
+          "literal": " SourceBlendFunction"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 534,
+            "length": 5
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 548,
+            "length": 23
+          }
+        },
+        {
+          "literal": " SourceBlendFactor"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 577,
+            "length": 12
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 594,
+            "length": 2
+          }
+        },
+        {
+          "literal": "\n        private readonly ISourceEngineContext engine;\n        private VirtualRenderTarget mask, objects;\n        public PanelStencilTargets(ISourceEngineContext engine) => this.engine = engine;\n        public VirtualRenderTarget Mask => mask ??= ((ISourceVirtualContentEnvironment)engine)."
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 1065,
+            "length": 67
+          }
+        },
+        {
+          "literal": ";\n        public VirtualRenderTarget Objects => objects ??= ((ISourceVirtualContentEnvironment)engine)."
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 1241,
+            "length": 69
+          }
+        },
+        {
+          "literal": ";\n\n        public void Dispose()\n        {\n            mask"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 1377,
+            "length": 12
+          }
+        },
+        {
+          "literal": "\n            objects"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 1417,
+            "length": 12
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 1434,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n    "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Stencils",
+            "normalizedSha256": "6ad218e1adcb3f98b6b0e6026f5b0f8fb397f35b1a73e460d4a7186208930b58",
+            "offset": 1436,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n}"
+        }
+      ]
+    },
+    {
+      "path": "Rendering/Panels/StylegroundsPanelRenderer.cs",
+      "sha256": "d180f7da0b517782dfd9cb123dbd9901a559bd3f46a2549733009f5b99cb57c8",
+      "segments": [
+        {
+          "literal": "using System;\n"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 0,
+            "length": 47
+          }
+        },
+        {
+          "literal": "Numerics;\nusing System.Runtime.CompilerServices;\nusing Celeste.Core.Display;\nusing Celeste.Core.Rendering;\nusing Celeste.Core.Rendering.States;\nusing Celeste.Core.Scheduling;\nusing Celeste.Everest.Reflection.Runtime;\nusing Celeste.Game.Execution.Levels;\nusing Celeste.Graphics.Rendering.Batches;\nusing Celeste.Graphics.Rendering.Devices;\nusing Celeste.Graphics.Rendering.Drawing;\nusing Celeste.Mods."
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 183,
+            "length": 32
+          }
+        },
+        {
+          "literal": "\nusing Celeste.Scene.Tracking;\nusing Celeste.Simulation.Presentation.Backdrops.Parallax;\nusing Celeste.Simulation.Presentation.Backdrops.Rendering;\nusing Celeste.Simulation.Presentation.Backdrops.Runtime;\nusing MonoMod.RuntimeDetour;\n\nnamespace Celeste.Mods.PrismaticHelper.Rendering.Panels\n{\n    public sealed class StylegroundsPanelRenderer : IDisposable\n    {\n        private readonly ISourceEngineContext engine;\n        private readonly PanelStencilTargets targets;\n        private readonly string worldPanelKey;\n        private readonly List<IDisposable> hooks = new();\n        private readonly ConditionalWeakTable<BackdropRendererPresentation, PanelRoomGroups> groups = new();\n        private SourceSpriteBatch Batch => ((ISourceDrawScope)engine).Draw.SpriteBatch;\n        private SourceGraphicsDevice Device => ((ISourceGraphicsDeviceEnvironment)engine).GraphicsDevice;\n\n        public StylegroundsPanelRenderer(ISourceEngineContext engine)\n        {\n            this.engine = engine;\n            targets = new PanelStencilTargets(engine);\n            var type = ((ISourceRuntimeTypeDiscoveryEnvironment)engine).RuntimeTypeDiscovery.ResolveRuntimeTypeAlias(\"PrismaticHelper.Entities.Panels.WorldPanel\");\n            if (type != null)\n            {\n                // Only a real registered WorldPanel producer can join this neutral room contract.\n                if (!typeof(IRoomBackdropPanel).IsAssignableFrom(type))\n                    throw new InvalidOperationException(\"The registered WorldPanel does not implement IRoomBackdropPanel.\");\n                worldPanelKey = ((ISourceSceneCatalogEnvironment)engine).SceneCatalog.Find(type).Name;\n            }\n\n            try\n            {\n                hooks.Add(new Hook(typeof(BackdropRendererPresentation).GetMethod(nameof(BackdropRendererPresentation.Update)), (Action<Action<BackdropRendererPresentation, object>, BackdropRendererPresentation, object>)Update));\n                hooks.Add(new Hook(typeof(BackdropRendererPresentation).GetMethod(nameof(BackdropRendererPresentation.BeforeRender)), (Action<Action<BackdropRendererPresentation, object>, BackdropRendererPresentation, object>)BeforeRender));\n                hooks.Add(new Hook(typeof(BackdropRendererPresentation).GetMethod(nameof(BackdropRendererPresentation.Render)), (Action<Action<BackdropRendererPresentation, object>, BackdropRendererPresentation, object>)Render));\n            }\n            catch\n            {\n                Dispose();\n                throw;\n            }\n        }\n\n        private bool Select(BackdropRendererPresentation renderer, object scene, out OriginalLevelSceneRoot level, out bool foreground)\n        {\n            level = scene as OriginalLevelSceneRoot;\n            foreground = false;\n            if (level == null || !ReferenceEquals(level.EngineContext, engine))\n                return false;\n            if (ReferenceEquals(renderer, level.Foreground))\n                foreground = true;\n            else if (!ReferenceEquals(renderer, level.Background))\n                return false;\n            return true;\n        }\n\n        private void Update(Action<BackdropRendererPresentation, object> orig, BackdropRendererPresentation self, object scene)\n        {\n            orig(self, scene);\n            if (Select(self, scene, out var level, out bool fg))\n                UpdatePanels(fg, level, self);\n        }\n\n        private void BeforeRender(Action<BackdropRendererPresentation, object> orig, BackdropRendererPresentation self, object scene)\n        {\n            orig(self, scene);\n            if (Select(self, scene, out var level, out bool fg))\n                BeforeRenderPanels(fg, level, self);\n        }\n\n        private void Render(Action<BackdropRendererPresentation, object> orig, BackdropRendererPresentation self, object scene)\n        {\n            orig(self, scene);\n            if (Select(self, scene, out var level, out bool fg))\n                RenderPanels(fg, level, self);\n        }\n\n        private PanelRoomGroups Collect(OriginalLevelSceneRoot level, BackdropRendererPresentation renderer, bool foreground, bool render)\n        {\n            var result = groups.GetValue(renderer, _ => new PanelRoomGroups());\n            result.Clear();\n            if (render)\n            {\n                var entities = level.Scheduler.Entities.Entities;\n                for (int i = 0; i < entities.Count; i++)\n                    if (entities[i] is StylegroundsPanel panel && panel.Foreground == foreground && panel.VisibleOnScreen(level.Camera))\n                        result.Add(panel.RoomName, panel);\n            }\n            else\n            {\n                foreach (StylegroundsPanel panel in level.Scheduler.Entities.GetTrackedEntities(typeof(StylegroundsPanel)))\n                    if (panel.Foreground == foreground)\n                        result.Add(panel.RoomName, null);\n                if (worldPanelKey != null)\n                    foreach (IRoomBackdropPanel panel in level.Scheduler.Entities.GetTrackedEntities(worldPanelKey))\n                        result.Add(panel.RoomName, null);\n            }\n\n            return result;\n        }\n\n        public void UpdatePanels(bool foreground, OriginalLevelSceneRoot level, BackdropRendererPresentation renderer)\n        {\n            var rooms = Collect(level, renderer, foreground, false);\n            for (int i = 0; i < rooms.Count; i++)\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 896,
+            "length": 7
+          }
+        },
+        {
+          "literal": " (var "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 922,
+            "length": 31
+          }
+        },
+        {
+          "literal": "\n                    "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 984,
+            "length": 23
+          }
+        },
+        {
+          "literal": " level, rooms[i].RoomName"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 1019,
+            "length": 23
+          }
+        },
+        {
+          "literal": "\n                    "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 1059,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n                        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 1081,
+            "length": 32
+          }
+        },
+        {
+          "literal": "\n                        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 1134,
+            "length": 4
+          }
+        },
+        {
+          "literal": " forced "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 1152,
+            "length": 24
+          }
+        },
+        {
+          "literal": "\n                        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 1197,
+            "length": 24
+          }
+        },
+        {
+          "literal": "\n                        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 1242,
+            "length": 29
+          }
+        },
+        {
+          "literal": "\n                        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 1292,
+            "length": 5
+          }
+        },
+        {
+          "literal": "level"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 1303,
+            "length": 31
+          }
+        },
+        {
+          "literal": " level, level"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 1349,
+            "length": 17
+          }
+        },
+        {
+          "literal": "forced))\n                            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 1427,
+            "length": 23
+          }
+        },
+        {
+          "literal": "\n                        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 1494,
+            "length": 27
+          }
+        },
+        {
+          "literal": "\n                        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 1542,
+            "length": 23
+          }
+        },
+        {
+          "literal": " forced;\n                    }\n        }\n\n        public void BeforeRenderPanels(bool foreground, OriginalLevelSceneRoot level, BackdropRendererPresentation renderer)\n        {\n            var rooms = Collect(level, renderer, foreground, false);\n            for (int i = 0; i < rooms.Count; i++)\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 2267,
+            "length": 7
+          }
+        },
+        {
+          "literal": " (var "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 2293,
+            "length": 31
+          }
+        },
+        {
+          "literal": "\n                    "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 2355,
+            "length": 23
+          }
+        },
+        {
+          "literal": " level, rooms[i].RoomName"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 2390,
+            "length": 23
+          }
+        },
+        {
+          "literal": "\n                    "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 2430,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n                        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 2452,
+            "length": 32
+          }
+        },
+        {
+          "literal": "\n                        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 2505,
+            "length": 4
+          }
+        },
+        {
+          "literal": " forced "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 2523,
+            "length": 24
+          }
+        },
+        {
+          "literal": "\n                        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 2568,
+            "length": 24
+          }
+        },
+        {
+          "literal": "\n                        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 2613,
+            "length": 29
+          }
+        },
+        {
+          "literal": "\n                        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 2663,
+            "length": 29
+          }
+        },
+        {
+          "literal": "\n                        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 2713,
+            "length": 27
+          }
+        },
+        {
+          "literal": "\n                        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 2761,
+            "length": 23
+          }
+        },
+        {
+          "literal": " forced;\n                    }\n        }\n\n        public void RenderPanels(bool foreground, OriginalLevelSceneRoot level, BackdropRendererPresentation renderer)\n        {\n            var rooms = Collect(level, renderer, foreground, true);\n            var context = ((ISourceRenderEnvironment)engine).CurrentContext;\n            for (int i = 0; i < rooms.Count; i++)\n            {\n                var group = rooms[i];\n                Device.SetRenderTarget(targets.Mask.Target);\n                Device.Clear(PackedColor"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 3573,
+            "length": 14
+          }
+        },
+        {
+          "literal": "\n                Batch"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 3616,
+            "length": 9
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 3638,
+            "length": 9
+          }
+        },
+        {
+          "literal": "var panel in group.Panels)\n                    panel.DrawMask(context, level.Camera);\n                Batch"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 3785,
+            "length": 7
+          }
+        },
+        {
+          "literal": "\n                Device.SetRenderTarget(targets.Objects.Target);\n                Device.Clear(PackedColor"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 3936,
+            "length": 14
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 3963,
+            "length": 26
+          }
+        },
+        {
+          "literal": "group.RoomName, renderer, level, context);\n                Batch.Begin(SourceSpriteSortMode.Deferred, PanelStencilTargets.AlphaMaskBlend, SourceSamplerState.PointClamp, SourceDepthStencilState.Default, SourceRasterizerState.CullNone, (object)null);\n                Batch.Draw(targets.Mask.Target"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 4263,
+            "length": 15
+          }
+        },
+        {
+          "literal": " PackedColor.White.PackedValue);\n                Batch"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 4321,
+            "length": 7
+          }
+        },
+        {
+          "literal": "\n                Device.SetRenderTarget(level.Buffers.Level.Target);\n                Batch.Begin(SourceSpriteSortMode.Deferred, SourceBlendState.AlphaBlend, SourceSamplerState.PointWrap, SourceDepthStencilState.None, SourceRasterizerState.CullNone, (object)null, level.Camera.Matrix);\n                Batch.Draw(targets.Objects.Target, level.Camera.Position, PackedColor.White.PackedValue);\n                Batch"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 4612,
+            "length": 7
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 4628,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 4634,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 4641,
+            "length": 6
+          }
+        },
+        {
+          "literal": " "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 4655,
+            "length": 43
+          }
+        },
+        {
+          "literal": " BackdropRendererPresentation renderer, OriginalLevelSceneRoot level, ISourceRenderContext context)\n        {\n            var blend = SourceBlendState"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 4803,
+            "length": 12
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 4824,
+            "length": 4
+          }
+        },
+        {
+          "literal": " usingBatch "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 4834,
+            "length": 8
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 4851,
+            "length": 9
+          }
+        },
+        {
+          "literal": "var "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 4877,
+            "length": 31
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 4917,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 4931,
+            "length": 38
+          }
+        },
+        {
+          "literal": "\n                    continue;\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5037,
+            "length": 15
+          }
+        },
+        {
+          "literal": " ParallaxBackdropPresentation "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5070,
+            "length": 34
+          }
+        },
+        {
+          "literal": " blend"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5115,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5129,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n                    "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5147,
+            "length": 4
+          }
+        },
+        {
+          "literal": "usingBatch)\n                        Batch"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5211,
+            "length": 7
+          }
+        },
+        {
+          "literal": "\n                    usingBatch = false;\n                    blend "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5295,
+            "length": 22
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5330,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5345,
+            "length": 32
+          }
+        },
+        {
+          "literal": "usingBatch)\n                {\n                    Batch.Begin(SourceSpriteSortMode.Deferred, blend, SourceSamplerState.PointClamp, SourceDepthStencilState.None, SourceRasterizerState.CullNone, (object)null, Matrix4x4"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5560,
+            "length": 11
+          }
+        },
+        {
+          "literal": "\n                    usingBatch "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5593,
+            "length": 7
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5613,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5628,
+            "length": 31
+          }
+        },
+        {
+          "literal": " usingBatch)\n                {\n                    Batch"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5760,
+            "length": 7
+          }
+        },
+        {
+          "literal": "\n                    usingBatch "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5808,
+            "length": 8
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5829,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5844,
+            "length": 16
+          }
+        },
+        {
+          "literal": "context, "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5860,
+            "length": 7
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5876,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5887,
+            "length": 4
+          }
+        },
+        {
+          "literal": "usingBatch)\n                Batch"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 5935,
+            "length": 17
+          }
+        },
+        {
+          "literal": "\n\n        public "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8084,
+            "length": 22
+          }
+        },
+        {
+          "literal": "BackdropPresentation backdrop, OriginalLevelSceneRoot "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8150,
+            "length": 24
+          }
+        },
+        {
+          "literal": " ignoreForceVisible "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8184,
+            "length": 8
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8197,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8207,
+            "length": 2
+          }
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8209,
+            "length": 3
+          }
+        },
+        {
+          "literal": "ignoreForceVisible && backdrop.ForceVisible)\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8272,
+            "length": 12
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8304,
+            "length": 2
+          }
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8306,
+            "length": 24
+          }
+        },
+        {
+          "literal": "backdrop"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8341,
+            "length": 41
+          }
+        },
+        {
+          "literal": "backdrop"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8393,
+            "length": 16
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8432,
+            "length": 13
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8465,
+            "length": 2
+          }
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8467,
+            "length": 24
+          }
+        },
+        {
+          "literal": "backdrop"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8502,
+            "length": 38
+          }
+        },
+        {
+          "literal": "backdrop"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8551,
+            "length": 13
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8587,
+            "length": 12
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8619,
+            "length": 2
+          }
+        },
+        {
+          "literal": " (backdrop"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8634,
+            "length": 21
+          }
+        },
+        {
+          "literal": " backdrop"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8667,
+            "length": 42
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8732,
+            "length": 13
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8765,
+            "length": 2
+          }
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8767,
+            "length": 24
+          }
+        },
+        {
+          "literal": "backdrop"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8802,
+            "length": 39
+          }
+        },
+        {
+          "literal": "backdrop"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8852,
+            "length": 13
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8888,
+            "length": 13
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8921,
+            "length": 2
+          }
+        },
+        {
+          "literal": " (backdrop"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8936,
+            "length": 23
+          }
+        },
+        {
+          "literal": " backdrop"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 8971,
+            "length": 28
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 9022,
+            "length": 13
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 9055,
+            "length": 2
+          }
+        },
+        {
+          "literal": " (backdrop"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 9070,
+            "length": 20
+          }
+        },
+        {
+          "literal": "backdrop"
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 9101,
+            "length": 23
+          }
+        },
+        {
+          "literal": "\n                "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 9147,
+            "length": 13
+          }
+        },
+        {
+          "literal": "\n            "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 9180,
+            "length": 12
+          }
+        },
+        {
+          "literal": "\n        "
+        },
+        {
+          "sourceRange": {
+            "input": "PrismaticHelper.Entities.Panels.StylegroundsPanelRenderer",
+            "normalizedSha256": "96d9817c409fe22c39d9461d43c5404afbaead0f793a3c492cc530ed90ad7c41",
+            "offset": 9197,
+            "length": 1
+          }
+        },
+        {
+          "literal": "\n\n        public void Dispose()\n        {\n            for (int i = hooks.Count - 1; i >= 0; i--)\n                hooks[i].Dispose();\n            hooks.Clear();\n            targets.Dispose();\n        }\n    }\n}"
+        }
+      ]
+    },
+    {
+      "path": "Celeste.Mods.PrismaticHelper.csproj",
+      "sha256": "4d337addd961875afcf4e6ce8db3f7b0e1047fc427c537247c33b6a1b1cad80a",
+      "segments": [
+        {
+          "literal": "<Project Sdk=\"Microsoft.NET.Sdk\">\n  <PropertyGroup>\n    <TargetFramework>netstandard2.1</TargetFramework>\n    <LangVersion>latest</LangVersion>\n    <Nullable>disable</Nullable>\n    <AssemblyName>Celeste.Mods.PrismaticHelper</AssemblyName>\n    <SharedBinaryDirectory>$(SharedRoot)/src/Celeste.Everest/bin/Release/netstandard2.1</SharedBinaryDirectory>\n  </PropertyGroup>\n  <ItemGroup>\n    <Reference Include=\"$(SharedBinaryDirectory)/Celeste.*.dll\" Private=\"false\" />\n    <PackageReference Include=\"MonoMod.RuntimeDetour\" Version=\"25.3.6\" />\n  </ItemGroup>\n</Project>\n"
+        }
+      ]
+    }
+  ]
+}
